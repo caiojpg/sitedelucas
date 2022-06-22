@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+body{
+    background: blueviolet;
+    height: 350vh;
+}
+.contain{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url(img/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-position:rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 400px;
+    height: 10vh;
+    background: #550381;
+    display: flex;
+    align-items: center;
+    color: #550381;
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
+    padding: 10px;
+    line-height: 1.3rem;
+}
+.logo img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+.logo span{
+    color:#fff;
+    font-size:18px;
+}
+.logo p{
+    width: 130px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.logo .fas{
+    font-size: 50px;
+}
+.navbar{
+    width: 100vw;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+ul.navbar li{
+    padding: 5px 15px;
+    margin-left: 30px;
+}
+ul.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+ul.navbar li a.active{
+    color: #FEC53A;
+}
+ul.navbar li a:hover:not(.active){
+    color: #FEC53A;
+    transition: .5s;
+}
+#btn{
+    gap:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 10vh;
+    background: #FEC53A;
+    color: #000;
+    outline: none;
+    border: none;
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 0px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#btn img{
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+    margin-left: 40px;
+}
+#btn:hover{
+    background: #eead2d;
+    transition: .5s;
+}
+#btn .fas{
+    margin-right: 10px;
+}
+.content-wrapper{
+    width: 80%;
+    min-height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subtitulo img{
+    width: 100px; height: 100px; object-fit: cover;
+}
+.subtitulo h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.content-desc p{
+    width: 550px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+.content-desc span{
+    color: #FEC53A;
+}
+#btn2{
+    width: 350px;
+    height: 10vh;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    font-family: Poppins, sans-serif;
+    background: #FEC53A;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    clip-path: polygon(0 0, 74% 0, 100% 100%, 0% 100%);
+    border-radius: 20px;
+    text-align: left;
+}
+#btn2:hover{
+    background: #eead2d;
+    transition: .5s;
+    cursor: pointer;
+}
+.rakuto{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(rgba(38, 2, 39, 0.849),rgb(204, 115, 14));
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.rakuto::before{
+    content: '';
+    width: 160px;
+    height: 160px;
+    background: url(img/cube.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+}
+.rakuto::after{
+    content: '';
+    width: 400px;
+    height: 400px;
+    background: url(img/rakuto.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0px;
+    left: -150px;
+}
+.logo-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+.logo-section .fas{
+    font-size: 6rem;
+    color: #FEC53A;
+}
+.logo-section h1{
+    width: 250px;
+    font-size: 2rem;
+    color: #FEC53A;
+    margin-left: 10px;
+}
+/* Section one starts here */
+
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.712)),
+    url(img/wras.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.section-1-wrapper{
+    width: 70%;
+    margin: auto;
+}
+.section-1 h1{
+    width: 500px;
+    color: #FEC53A;
+    font-size: 1.5rem;
+    position: relative;
+    font-weight: 400;
+}
+.section-1-img{
+    display: flex;
+}
+.section-1-img .img{
+    width: 100px;
+    height: 130px;
+    background: url(img/jogo1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.section-1-img .img-2{
+    background: url(img/jogo2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img  .img-3{
+    background: url(img/jogo3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img  .img-4{
+    background: url(img/jogo4.png);
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img  .img-5{
+    background: url(img/jogo5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img  .img-6{
+    background: url(img/jogo6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-7{
+    background: url(img/jogo7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-8{
+    background: url(img/jogo8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-9{
+    background: url(img/jogo9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-10{
+    background: url(img/jogo10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-11{
+    background: url(img/jogo11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img .img-12{
+    background: url(img/jogo12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img:hover{
+    transform: translateY(-10px);
+    transition: .3s;
+}
+
+/* Section 3 starts here */
+.game-categories{
+    width: 70%;
+    margin: 50px auto;
+    position: relative;
+}
+.game-categories h1{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #FEC53A;
+}
+.game-wrapper{
+    display: flex;
+}
+.gw{
+    width: 120px;
+    height: 120px;
+    background: url(img/carrace.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 20px 15px 0 0;
+    border-radius: 10px;
+    transition: .3s;
+}
+.gw:hover{
+    transform: translateY(-10px);
+}
+.left{
+    position: relative;
+    right: -140px;
+}
+
+.gw-1{
+    background: url(img/download.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-2{
+    background: url(img/asphalt8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-3{
+    background: url(img/battle.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-4{
+    background: url(img/pes22.webp);
+    background-size: cover;
+    background-position: center;
+}
+.gw-5{
+    background: url(img/zelda.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-6{
+    background: url(img/rocket.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-7{
+    background: url(img/naruto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-8{
+    background: url(img/nba.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gw-9{
+    background: url(img/mortalk.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-2{
+    width: 100%;
+    height: 50vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.712)),
+    url(img/fundo4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section-2 h1{
+    font-size: 2rem;
+    color: #fff;
+    margin: 20px 0;
+}
+.players{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.p-image{
+    width: 200px;
+    height: 200px;
+    background: url(img/vaklish.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+}
+.p-image-1::after{
+    content: 'VS';
+    position: absolute;
+    right: -65px;
+    bottom: 0;
+    font-size: 2rem;
+    color: #FEC53A;
+}
+.players span{
+    font-size: 1.5rem;
+    color: #FEC53A;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.stars{
+    color: #FEC53A;
+}
+.p-image-2{
+    background: url(img/personage.png);
+    background-size: cover;
+    background-position: center;
+}
+.p-image-3::after{
+    content: 'VS';
+    position: absolute;
+    font-family: Poppins, sans-serif;
+    right: -80px;
+    bottom: 0;
+    font-size: 2rem;
+    color: #FEC53A;
+}
+.p-image-4{
+    background: url(img/Luccas.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* section 3 starts here */
+
+.section-3{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/fundo5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.section-3 h1{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+}
+
+.section-3-wrapper{
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback{
+    width: 250px;
+    height: 300px;
+    background: url(img/guilherme.jpeg);
+    background-position: center;
+    background-size: cover;
+ 
+}
+.feedback-desc{
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.767);
+    padding: 10px;
+    color: #fff;
+    margin-right: 10px;
+}
+.feedback-desc .far{
+    color: #FEC53A;
+    font-size: 30px;
+}
+.f-img-2{
+    background: url(img/Luccas.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+/* FOoter section */
+footer{
+    width: 100%;
+    height: 55vh;
+    background: #282828; /*COR DO ICONE*/
+    display: flex;
+    align-items: center;
+}
+.footer-body{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-logo{
+    height: 12vh;
+    background-color: #FEC53A; /* COR DE BACKGROUND */
+    color: #000;
+    line-height: 1.7rem;
+}
+ul h3{
+    color: #fff;
+    font-weight: 450;
+}
+ul li{
+    list-style: none;
+    line-height: 2.5rem;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+ul li a .fab{
+    font-size: 1.2rem;
+    color: #FEC53A;
+    margin-right: 15px;
+}
+ul li a:hover{
+    color: #FEC53A;
+    transition: .5s;
+}
+.social-media .social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+}
+.social-icon img{
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+}
+.social-icon .diferent{
+    width: 16px;
+    height: 16px;
+}
+.footer-bottom{
+    width: 100%;
+    height: 7vh;
+    background: #1B1919;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+}
+.footer-bottom span{
+    color: #FEC53A;
+    font-weight: bold;
+}
+/*==========ARCADE HTML=========*/
+.box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+.box h1{
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    color:#eead2d;
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.image-galery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1rem 5%;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.img-item{
+    width: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 230px;
+}
+.img-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img-item img:hover{
+    transform: scale(1.1);
+    filter: blur(1px);
+    transition: .3s all;
+    cursor:pointer;
+}
